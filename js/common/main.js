@@ -12,6 +12,14 @@
 /**
  * 
  */
-Young.controller('CSS3LibCtrl',function(){
+Young.controller('CSS3LibCtrl', function() {
+    this.viewCSScode = function(event) {
+        var $this = angular.element(event.target);
+        $this.parent().parent().find('pre').removeClass('hideCssAnimation').addClass('showCssAnimation');
+    };
 
+    this.hideCSScode = function(event) {
+        var $this = angular.element(event.target);
+        $this.parent().parent().find('pre').removeClass('showCssAnimation').addClass('hideCssAnimation');
+    }
 });

@@ -6,19 +6,22 @@
     <title>CSS3 UI Lib</title>
     <meta name="description" content="VinceChueng,Angular,JavaScript,BootStrap,HTML5,CSS3" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles/prism.css" data-noprefix>
     <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" href="styles/inherit.css">
+    <link rel="stylesheet" type="text/css" href="styles/custom.css">
 </head>
 
-<body ng-controller="CSS3LibCtrl">
+<body ng-controller="CSS3LibCtrl as mainCtrl">
     <div class="app" id="app" ui-view></div>
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vender/jquery.min.js"></script>
     <!-- Angular -->
-    <script src="js/vender/angular.js"></script>
+    <script type="text/javascript" src="js/vender/angular.js"></script>
     <!-- Vendor -->
-    <script src="js/vender/angular-ui-router/angular-ui-router.js"></script>
+    <script type="text/javascript" src="js/vender/angular-ui-router/angular-ui-router.js"></script>
     <!-- lazyload -->
-    <script src="js/vender/ocLazyLoad.js"></script>
+    <script type="text/javascript" src="js/vender/ocLazyLoad.js"></script>
     
     <script type="text/javascript" src="js/common/app.js"></script>
     <script type="text/javascript" src="js/common/config.js"></script>
