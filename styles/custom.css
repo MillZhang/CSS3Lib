@@ -19,7 +19,7 @@
     margin: 0 auto;
 }
 
-.wrapper ::-webkit-scrollbar {
+.wrapper::-webkit-scrollbar {
     width: 0px!important;
 }
 
@@ -115,9 +115,27 @@ pre.hideCssAnimation {
     transform: translateY(.2em);
 }
 
+.header-menu {
+    width: 40px;
+    margin-left: 1em;
+    display: none;
+}
+
+.header-menu img {
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+
 @media (max-width: 1200px) {
     .left-column {
         width: 0;
+    }
+    .header-menu {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        cursor:pointer;
     }
 }
 

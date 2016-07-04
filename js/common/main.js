@@ -24,6 +24,15 @@ Young.controller('CSS3LibCtrl', function() {
 			$this.attr("data-you-show",true);
 			$this.text("Show CSS Code");
         }
-        
     };
+
+    this.showMenu = function(event){
+        angular.element(event.target).toggleClass('show');
+        if (angular.element(event.target).hasClass('show')) {
+            $(".left-column").css("width","300px");
+        }else{
+            $(".left-column").css("width","0");
+        }
+        
+    }
 });
